@@ -1,0 +1,9 @@
+<view
+	class="add-notes-model-fade {{mask?'show':''}}" 
+	catchtouchmove="ture">
+	<view class="close-add-notes" bindtap="hide"></view>
+	<view style="height:{{modelusHeight}}rpx;" class="add-notes-model {{mask?'on':''}}">
+		<slot></slot>
+	</view>
+</view>
+

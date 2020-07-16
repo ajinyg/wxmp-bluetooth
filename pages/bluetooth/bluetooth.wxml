@@ -1,0 +1,6 @@
+ <view 
+ 	class="_blue {{ !blueTooth.connected_name  ? 'active' : '' }}" bindtap="show">
+	{{ !blueTooth.connected_name ? '打印机当前未连接' : '蓝牙已连接：'+ blueTooth.connected_name }}
+</view>	
+<button bindtap="onPrint">打印</button>
+<blue-tooth id="blueTooth" bind:onBlueToothHide="onBlueToothHide"></blue-tooth>

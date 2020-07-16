@@ -1,0 +1,36 @@
+<message-model id="messageModel" bind:onSendHide="onSendHide">
+	<view class="bluetooth-container">
+		<view class="bluetooth-model-title">
+			<text>附近可用打印机</text>
+		</view>
+		<view class="right_close_content" bindtap="hide">
+			<image src="http://img08.onehaohuoapp.com/upload/sneaker/web/7a3296a3-b024-4b53-b02a-8fb96e07af55.png" class="close_icon" ></image>
+		</view>
+		<scroll-view style="height:90vh;" scroll-y="{{true}}">
+			<view class="bluetooth-model-list">
+
+				<block  wx:for="{{devices}}" wx:key="{{index}}">
+					<view 
+						class="bluetooth-item {{ item.is_connected ? 'active' : '' }}"  
+						data-id="{{item.deviceId}}"
+						hover-class="_active" 
+						bindtap="connectTo">
+						<view class="flex-common b-pr">
+							<view class="bluetooth-item-name">{{item.name}}</view>
+							<view  class="bluetooth-item-status">
+								<block wx:if="{{item.is_connected}}">
+									<view data-id="{{item.deviceId}}" catchtap="disconnectDevice">已连接 · 点击断开</view>
+								</block>
+								<block wx:if="{{item.is_showLoading}}">正在连接...</block>
+							</view>
+						</view>
+					</view>
+				</block>
+
+				<blcok wx:if="{{!noneBle}}">
+					<view class="none">没有搜到可用的设备</view>
+				</blcok>
+			</view>
+		</scroll-view >
+	</view>
+</message-model>

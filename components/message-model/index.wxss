@@ -1,0 +1,38 @@
+.add-notes-model-fade{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.35);
+	background-size:100%;
+	z-index:99999;
+	transition:all .3s ease-in-out;
+	opacity:0;
+	visibility:hidden;
+}
+.add-notes-model-fade.show{
+	visibility:inherit;
+	opacity:1;
+}
+.close-add-notes{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	transition:all .3s ease-in-out;
+}
+.add-notes-model{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:900rpx;
+	background:#ffffff;
+	transition:all .3s ease-in-out;
+	transform:translate3d(0,100%,0);
+}
+.add-notes-model.on{
+	transform:translate3d(0,0,0);
+}

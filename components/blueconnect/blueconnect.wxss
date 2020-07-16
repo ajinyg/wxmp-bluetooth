@@ -1,0 +1,89 @@
+.none {
+  position: absolute;
+  top: -20rpx;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 225rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size: 24rpx;
+  color: #c5c5c5;
+  text-align: center;
+}
+/*蓝牙*/
+.bluetooth-container .bluetooth-model-title {
+  position: relative;
+  width: 686rpx;
+  margin: 0 auto;
+  padding: 30rpx 0;
+  text-align: left;
+  line-height: 60rpx;
+  color: #333;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.bluetooth-container .right_close_content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+}
+.bluetooth-container .right_close_content image.close_icon {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 24rpx;
+  height: 24rpx;
+}
+.bluetooth-container .bluetooth-model-list {
+  position: relative;
+  height: 670rpx;
+}
+.bluetooth-container .bluetooth-model-list .bluetooth-item {
+  width: 686rpx;
+  height: 112rpx;
+  margin: 0 auto;
+  border: 1rpx solid #eee;
+  margin-bottom: 16rpx;
+}
+.bluetooth-container .bluetooth-model-list .bluetooth-item .b-pr {
+  position: relative;
+  height: 112rpx;
+  line-height: 112rpx;
+}
+.bluetooth-container .bluetooth-model-list .bluetooth-item .b-pr .bluetooth-item-name {
+  padding-left: 30rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.bluetooth-container .bluetooth-model-list .bluetooth-item .b-pr .bluetooth-item-status {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 32rpx;
+  margin: auto;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #333;
+}
+.bluetooth-container .bluetooth-model-list .bluetooth-item.active {
+  background: rgba(255,44,94,0.1);
+  border: 1rpx solid #ff2c5e;
+}
+.bluetooth-container .bluetooth-model-list .bluetooth-item.active .bluetooth-item-name {
+  color: #ff2c5e;
+}
+.bluetooth-container .bluetooth-model-list .bluetooth-item.active .bluetooth-item-status {
+  color: #ff2c5e;
+}
+._active {
+  background: rgba(255,44,94,0.1);
+  border: 1rpx solid #ff2c5e;
+}

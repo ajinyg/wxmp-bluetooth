@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+  	"message-model":"../message-model/index"
+  }
+}

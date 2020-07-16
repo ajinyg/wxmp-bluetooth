@@ -1,0 +1,6 @@
+{
+	"navigationBarTitleText": "打印",
+	"usingComponents": {
+		"blue-tooth":"../../components/blueconnect/blueconnect"
+	}
+}
